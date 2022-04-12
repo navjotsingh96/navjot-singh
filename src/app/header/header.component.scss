@@ -2,8 +2,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
-    height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
     a {
         color: white;
         margin-left: 50px;
@@ -14,5 +15,9 @@ header {
             color: #E6405D;
             border-bottom: 3px solid #E6405D;
         }
+    }
+    img{
+        width: 160px;
+        cursor: pointer;
     }
 }
