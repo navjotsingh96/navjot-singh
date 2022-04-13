@@ -1,12 +1,11 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    justify-content: space-evenly;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     animation: slideTop 1s ease-in-out;
     padding-top: 20px;
-  
     a {
         color: white;
         margin-left: 50px;
@@ -18,16 +17,21 @@ header {
             border-bottom: 3px solid #E6405D;
         }
     }
-    img{
+    img {
         width: 160px;
         cursor: pointer;
     }
 }
-@keyframes slideTop {
-    from{
-        margin-top: -70px;
-    } to{
-        margin-top: 0px;
 
+.margin-right {
+    margin-right: 550px;
+}
+
+@keyframes slideTop {
+    from {
+        margin-top: -70px;
+    }
+    to {
+        margin-top: 0px;
     }
 }
