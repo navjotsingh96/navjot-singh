@@ -32,3 +32,27 @@
         }
     }
 }
+
+.project-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.project-images {
+    cursor: pointer;
+    img {
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+        padding-bottom: 50px;
+    }
+}
