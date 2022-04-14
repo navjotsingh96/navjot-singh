@@ -49,11 +49,41 @@
 }
 
 .project-images {
+    transition: all 225ms ease-in-out;
+    position: relative;
     cursor: pointer;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 50px;
     img {
         height: 300px;
         width: 400px;
         object-fit: cover;
-        padding-bottom: 50px;
+    }
+    &:hover {
+        box-shadow: 0px 0px 12px 1px #E6405D;
+    }
+}
+
+.project-details {
+    color: white;
+    height: 300px;
+    width: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(52 52 52 / 49%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+    transition: all 225ms ease-in-out;
+    a {
+        color: white;
     }
 }

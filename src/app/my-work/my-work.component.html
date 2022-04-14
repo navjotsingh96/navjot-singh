@@ -15,17 +15,40 @@
 </div>
 <div class="project-container">
     <div class="projects">
-        <div class="project-images">
+
+        <div *ngIf="all; else all" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
             <img src="assets/img/pokomon.jpeg">
+            <div *ngIf="pokedox" class="project-details">
+                <div><span>Pokedex</span></div>
+                <p>API based library to check Pokemons from the famous Nintendo game.</p>
+                <a href="#">View</a>
+            </div>
         </div>
-        <div class="project-images">
+        <div *ngIf="all" class="project-images" (mouseover)="elPollo()" (mouseout)="elPolloNone()">
             <img src="assets/img/el_pollo_loco.png">
+            <div *ngIf="game" class="project-details">
+                <div><span>El POLLO LOCO</span></div>
+                <p>
+                    A Jump and Run game based on objectoriented programming with JavaScript.</p>
+                <a href="#">View</a>
+            </div>
         </div>
-        <div class="project-images">
+        <div *ngIf="all" class="project-images" (mouseover)="joinapp()" (mouseout)="joinNone()">
             <img src="assets/img/join.png">
+            <div *ngIf="join" class="project-details">
+                <div><span>JOIN</span></div>
+                <p>Tasks management system based on Eisenhower s urgent-important-principle.</p>
+                <a href="#">View</a>
+            </div>
+
         </div>
-        <div class="project-images">
+        <div *ngIf="all" class="project-images" (mouseover)="ring()" (mouseout)="ringNone()">
             <img src="assets/img/ringoffire.png">
+            <div *ngIf="ringoffire" class="project-details">
+                <div><span>Ring of Fire</span></div>
+                <p>Angular-based web-app of the popular drinking game.</p>
+                <a href="#">View</a>
+            </div>
         </div>
     </div>
 </div>
