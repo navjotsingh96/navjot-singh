@@ -21,7 +21,7 @@ export class MyWorkComponent implements OnInit {
   game = false;
   join = false;
   ringoffire = false;
-
+ 
   allProlects() {
     this.all = true;
     this.java = true;
@@ -30,20 +30,20 @@ export class MyWorkComponent implements OnInit {
   }
   angularProjects() {
     this.angular = true;
-      this.all = false;
-      this.java = false;
+    this.all = false;
+    this.java = false;
 
-    }
-  
+  }
+
   javaProjects() {
     this.java = true
-      this.all = false;
-      this.angular = false;
-    }
+    this.all = false;
+    this.angular = false;
+  }
 
   pokemon() {
     this.pokedox = true;
-    console.log('hier')
+
   }
   pokemonNone() {
     this.pokedox = false;
