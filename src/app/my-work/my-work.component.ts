@@ -12,15 +12,34 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  all:boolean=true;
-  angular = false;
-  java:boolean = false;
+
+  all = true;
+  angular = true;
+  java = true;
 
   pokedox = false;
   game = false;
   join = false;
-  ringoffire= false;
- 
+  ringoffire = false;
+
+  allProlects() {
+    this.all = true;
+    this.java = true;
+    this.angular = true;
+
+  }
+  angularProjects() {
+    this.angular = true;
+      this.all = false;
+      this.java = false;
+
+    }
+  
+  javaProjects() {
+    this.java = true
+      this.all = false;
+      this.angular = false;
+    }
 
   pokemon() {
     this.pokedox = true;
@@ -35,16 +54,16 @@ export class MyWorkComponent implements OnInit {
   elPolloNone() {
     this.game = false;
   }
-  joinapp(){
+  joinapp() {
     this.join = true;
   }
-  joinNone(){
+  joinNone() {
     this.join = false;
   }
-  ring(){
+  ring() {
     this.ringoffire = true;
   }
-  ringNone(){
+  ringNone() {
     this.ringoffire = false;
 
   }

@@ -3,20 +3,20 @@
 </div>
 <div class="myWork-container">
     <div>
-        <button>All</button>
+        <button (click)="allProlects()">All</button>
     </div>
     <div>
-        <button>Angular</button>
+        <button (click)="angularProjects()">Angular</button>
 
     </div>
     <div>
-        <button>Javascript</button>
+        <button (click)="javaProjects()">Javascript</button>
     </div>
 </div>
 <div class="project-container">
     <div class="projects">
 
-        <div *ngIf="all; else all" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
+        <div *ngIf="java" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
             <img src="assets/img/pokomon.jpeg">
             <div *ngIf="pokedox" class="project-details">
                 <div><span>Pokedex</span></div>
@@ -24,7 +24,7 @@
                 <a href="#">View</a>
             </div>
         </div>
-        <div *ngIf="all" class="project-images" (mouseover)="elPollo()" (mouseout)="elPolloNone()">
+        <div *ngIf="java" class="project-images" (mouseover)="elPollo()" (mouseout)="elPolloNone()">
             <img src="assets/img/el_pollo_loco.png">
             <div *ngIf="game" class="project-details">
                 <div><span>El POLLO LOCO</span></div>
@@ -33,7 +33,7 @@
                 <a href="#">View</a>
             </div>
         </div>
-        <div *ngIf="all" class="project-images" (mouseover)="joinapp()" (mouseout)="joinNone()">
+        <div *ngIf="java" class="project-images" (mouseover)="joinapp()" (mouseout)="joinNone()">
             <img src="assets/img/join.png">
             <div *ngIf="join" class="project-details">
                 <div><span>JOIN</span></div>
@@ -42,7 +42,7 @@
             </div>
 
         </div>
-        <div *ngIf="all" class="project-images" (mouseover)="ring()" (mouseout)="ringNone()">
+        <div *ngIf="angular" class="project-images" (mouseover)="ring()" (mouseout)="ringNone()">
             <img src="assets/img/ringoffire.png">
             <div *ngIf="ringoffire" class="project-details">
                 <div><span>Ring of Fire</span></div>
