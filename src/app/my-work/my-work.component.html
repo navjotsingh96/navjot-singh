@@ -16,7 +16,7 @@
 <div class="project-container">
     <div class="projects">
 
-        <div *ngIf="java" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
+        <div data-aos="fade-in" *ngIf="java" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
             <img src="assets/img/pokomon.jpeg">
             <div *ngIf="pokedox" class="project-details">
                 <div><span>Pokedex</span></div>
