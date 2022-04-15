@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
@@ -43,7 +44,6 @@ export class MyWorkComponent implements OnInit {
 
   pokemon() {
     this.pokedox = true;
-
   }
   pokemonNone() {
     this.pokedox = false;

@@ -16,15 +16,16 @@
 <div class="project-container">
     <div class="projects">
 
-        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseover)="pokemon()" (mouseout)="pokemonNone()">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseenter)="pokemon()" (mouseleave)="pokemonNone()">
             <img src="assets/img/pokomon.jpeg">
+
             <div *ngIf="pokedox" class="project-details">
                 <div><span>Pokedex</span></div>
                 <p>API based library to check Pokemons from the famous Nintendo game.</p>
                 <a href="#">View</a>
             </div>
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseover)="elPollo()" (mouseout)="elPolloNone()">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseenter)="elPollo()" (mouseleave)="elPolloNone()">
             <img src="assets/img/el_pollo_loco.png">
             <div *ngIf="game" class="project-details">
                 <div><span>El POLLO LOCO</span></div>
@@ -33,7 +34,7 @@
                 <a href="#">View</a>
             </div>
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseover)="joinapp()" (mouseout)="joinNone()">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="java" class="project-images" (mouseenter)="joinapp()" (mouseleave)="joinNone()">
             <img src="assets/img/join.png">
             <div *ngIf="join" class="project-details">
                 <div><span>JOIN</span></div>
@@ -42,7 +43,7 @@
             </div>
 
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="angular" class="project-images" (mouseover)="ring()" (mouseout)="ringNone()">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="angular" class="project-images" (mouseenter)="ring()" (mouseleave)="ringNone()">
             <img src="assets/img/ringoffire.png">
             <div *ngIf="ringoffire" class="project-details">
                 <div><span>Ring of Fire</span></div>
