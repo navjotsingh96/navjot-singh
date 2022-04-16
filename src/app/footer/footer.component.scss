@@ -5,6 +5,11 @@ footer {
     a {
         text-decoration: none;
         color: gray;
+        transition: all 225ms ease-in-out;
+        &:hover {
+            color: black;
+            text-decoration: 3px underline;
+        }
     }
 }
 
@@ -15,5 +20,9 @@ footer {
     img {
         margin-left: 50px;
         height: 50px;
+        transition: all 225ms ease-in-out;
+        &:hover {
+            transform: translateY(-10px) scale(1.1);
+        }
     }
 }

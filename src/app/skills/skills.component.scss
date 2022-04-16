@@ -57,3 +57,27 @@
     justify-content: space-between;
     width: 50%;
 }
+
+@media (max-width:1300px) {
+    .div-3 {
+        width: 60%;
+    }
+}
+
+@media (max-width:1150px) {
+    .div-3 {
+        width: 80%;
+    }
+}
+
+@media (max-width:850px) {
+    .div-3 {
+        width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+    .div-3 {
+        flex-direction: column;
+    }
+}

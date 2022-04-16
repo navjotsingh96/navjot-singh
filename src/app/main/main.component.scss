@@ -176,19 +176,8 @@ h1 {
     object-position: 0% 10%;
     border-radius: 100%;
     transition: all 225ms ease;
-    /*  animation: rightSlide 1s ease-in-out; */
     &:hover {
         transform: translateY(-20px);
-    }
-}
-
-@keyframes rightSlide {
-    from {
-        opacity: 0;
-        margin-right: -200px;
-    }
-    to {
-        margin-right: 0;
     }
 }
 
@@ -205,8 +194,6 @@ h1 {
     transition: all 225ms ease;
     &:hover {
         transform: translateY(-10px) translateX(-10px);
-        /* background-color: #7AF8D9;
-            color: white; */
         box-shadow: 9px 9px 4px 0px;
     }
 }
@@ -225,9 +212,11 @@ h1 {
         padding: 15px;
         cursor: pointer;
         transition: all 105ms ease-in-out;
+        z-index: 2;
         &:hover {
-            box-shadow: 0px 0px 14px 0px;
+            box-shadow: 0px 0px 14px 0px white;
             transition: all 105ms ease-in-out;
+            transform: translateY(10px);
         }
     }
 }

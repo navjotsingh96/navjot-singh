@@ -1,10 +1,31 @@
 <header>
     <div class="margin-right">
-        <img data-aos="flip-down" data-aos-duration="1200" src="assets/icons/logo-white.png">
+        <a href="#top"><img data-aos="flip-down" data-aos-duration="1200" src="assets/icons/logo-white.png"></a>
     </div>
     <div data-aos="flip-down" data-aos-duration="1200" class="links">
-        <a routerLink="/">HOME</a>
-        <a routerLink="/my-work">PORTFOLIO</a>
-        <a routerLink="/about-me">ABOUT</a>
+        <a href="#top">HOME</a>
+        <a href="#my-work">PORTFOLIO</a>
+        <a href="#about-me">ABOUT</a>
     </div>
 </header>
+
+
+<div class="header hide-img">
+    <a href="#top"><img class="header-img" src="assets/icons/logo-white.png"></a>
+</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+<div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+        <li class="border-left responsive-mobile">
+            <a href="#top"><img class="header-img" src="assets/icons/logo-white.png"></a>
+        </li>
+        <li><a href="#top">HOME</a></li>
+        <li> <a href="#my-work">PORTFOLIO</a></li>
+        <li><a href="#about-me">ABOUT</a></li>
+    </ul>
+</div>
