@@ -88,3 +88,33 @@
         color: white;
     }
 }
+
+@media (max-width:1075px) {
+    .heading {
+        h2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+    .myWork-container {
+        padding-bottom: 25px;
+        button {
+            width: 100px;
+            height: 60px;
+        }
+    }
+    .project-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        img {
+            width: 300px;
+            height: 250px;
+        }
+    }
+    .project-details {
+        width: 300px;
+        height: 250px;
+    }
+}

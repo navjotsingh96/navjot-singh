@@ -26,3 +26,20 @@ footer {
         }
     }
 }
+
+@media (max-width:1075px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .footer-container {
+        flex-direction: column-reverse;
+        padding-right: 40px;
+    }
+    .links {
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+}

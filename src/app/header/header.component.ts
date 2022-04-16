@@ -11,5 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+sidemenu(){
+  document.getElementById('sidebarMenu')?.classList.add('d-none');
+}
 }
