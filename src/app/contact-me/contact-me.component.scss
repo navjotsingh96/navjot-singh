@@ -102,7 +102,7 @@
         padding-left: 25px;
     }
     .contact-heading {
-        padding-left: 0px;
+        padding-left: 103px;
         width: 100%;
         h1 {
             font-size: 36px;
@@ -118,5 +118,11 @@
     }
     .btn {
         width: 85%;
+    }
+}
+
+@media (max-width:700px) {
+    .contact-heading {
+        padding-left: 0;
     }
 }
