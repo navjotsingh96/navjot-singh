@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 200px;
+}
+p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bg1 {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#EFEFEF;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 2px;
+}
+a {
+    text-decoration: none;
+    color: brown;
+    border-bottom: 2px black transparent;
+    
+}
+a:hover {
+    border-bottom: 2px black solid;
+    transition: all 150ms ease-in-out;
+}
+@media (max-width:1000px) {
+   
+    
+
+    .bg1  {
+        margin: 0px 0px 0px 0px;
+        height: 100vh;
+        text-align: center;
+    }
+  
+}
