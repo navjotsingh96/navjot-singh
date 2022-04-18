@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+darkMode = true;
+  constructor(public router : Router) { }
 
   ngOnInit(): void {
-  }
-sidemenu(){
-  document.getElementById('sidebarMenu')?.classList.add('d-none');
 }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
-  constructor(public router : Router){}
+  @Input() darkMode= false;
+  constructor(public router : Router){
+  console.log(router)
+
+  }
 }

@@ -47,26 +47,6 @@
         display: none;
         width: 40px;
     }
-    /*   .main {
-        margin: 0 auto;
-        display: block;
-        height: 100%;
-        margin-top: 60px;
-    } */
-    /* .mainInner {
-        display: table;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    } */
-    /*    .mainInner div {
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 3em;
-        font-weight: bold;
-        letter-spacing: 1.25px;
-    }
-     */
     
     #sidebarMenu {
         display: none;
@@ -80,6 +60,7 @@
         transition: transform 250ms ease-in-out;
         backdrop-filter: blur(5px);
         z-index: 9;
+        background-color: #00000045;
     }
     
     .sidebarMenuInner {
@@ -280,5 +261,17 @@
         }
         .header-img {
             display: flex;
+        }
+        .darkLinks {
+            color: black !important;
+            &:hover {
+                color: rgb(52, 50, 50) !important;
+            }
+            a {
+                color: black !important;
+                &:hover {
+                    color: rgb(157, 157, 157) !important;
+                }
+            }
         }
     }

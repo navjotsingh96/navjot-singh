@@ -11,6 +11,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectComponent } from './data-protect/data-protect.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    ImprintComponent
+    ImprintComponent,
+    DataProtectComponent
   ],
   imports: [
     BrowserModule,
