@@ -1,27 +1,15 @@
 .main-container {
-    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.bgr-clr {
+    background-color: black;
+}
+
 h1 {
     margin-top: 100px;
-    /*  animation: leftSlide 1s ease-in-out; */
-}
-
-@keyframes leftSlide {
-    from {
-        opacity: 0;
-        margin-left: -200px;
-    }
-    to {
-        margin-left: 0;
-    }
-}
-
-.name {
-    color: #E6405D;
 }
 
 
@@ -204,7 +192,7 @@ h1 {
     justify-content: center;
     padding-top: 60px;
     padding-bottom: 50px;
-    background-color: black;
+    /* background-color: black; */
     img {
         height: 15px;
         width: 15px;
@@ -222,7 +210,7 @@ h1 {
     }
 }
 
-.cont-cont {
+.contact {
     display: flex;
 }
 
@@ -242,5 +230,11 @@ h1 {
     .contact-btn {
         margin-top: 0px;
         width: 320px;
+    }
+    .scroll-btn {
+        display: none;
+    }
+    .contact {
+        padding-bottom: 50px;
     }
 }
