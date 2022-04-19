@@ -1,4 +1,4 @@
-<div class="bgr-clr">
+<div [class.bgr-clr]="router.url == '/'">
     <app-header id="top"></app-header>
 </div>
 <router-outlet></router-outlet>

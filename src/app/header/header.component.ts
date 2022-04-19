@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-darkMode = true;
   constructor(public router : Router) { }
 
   ngOnInit(): void {

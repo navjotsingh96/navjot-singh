@@ -1,8 +1,9 @@
-<header>
+<header [class.darkHeader]="router.url !== '/'">
     <div class="margin-right">
-        <a routerLink="/"><img data-aos="flip-down" data-aos-duration="1200" src="assets/icons/logo-white.png"></a>
+        <a routerLink="/"><img *ngIf="router.url == '/'" data-aos="flip-down" data-aos-duration="1200" src="assets/icons/logo-white.png"></a>
+        <a routerLink="/"><img *ngIf="router.url !== '/'" data-aos="flip-down" data-aos-duration="1200" src="assets/icons/logo-black.png"></a>
     </div>
-    <div data-aos="flip-down" data-aos-duration="1200" class="links">
+    <div data-aos="flip-down" data-aos-duration="1200" class="links" [class.darkLinks]="router.url !== '/'">
         <a href="#top">HOME</a>
         <a href="#my-work">PORTFOLIO</a>
         <a href="#about-me">ABOUT</a>

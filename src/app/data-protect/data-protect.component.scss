@@ -1,12 +1,13 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .data-container {
-    width: 65%;
     h1,
     h2 {
         color: black;
@@ -14,8 +15,11 @@
 }
 
 @media(max-width:1075px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .data-container {
-        width: 85%;
         padding-right: 0;
         padding-top: 100px;
         h1 {

@@ -76,11 +76,12 @@
         }
     }
     .details {
-        width: 100%;
+        width: 90vw;
         padding-top: 20px;
     }
     .my-details {
         flex-direction: column;
+        padding-left: 0;
     }
     .icon {
         width: 100%;

@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-container">
+    <div [class.darkmode]="router.url !== '/'" class="footer-container">
         <div class="links">
             <a routerLink="/imprint">Impressum</a> -
             <a routerLink="/data-protect">Legal Notice</a>

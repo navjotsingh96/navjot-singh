@@ -94,6 +94,18 @@
     }
 }
 
+@media (max-width:1550px) {
+    .contact-heading {
+        width: 100%;
+    }
+}
+
+@media (max-width:1250px) {
+    .contact-heading {
+        padding-left: 300px;
+    }
+}
+
 @media (max-width:1075px) {
     .contact {
         padding-top: 25px;
