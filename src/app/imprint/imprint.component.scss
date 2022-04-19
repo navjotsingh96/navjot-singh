@@ -1,26 +1,57 @@
-.container-imprint {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 200px;
-    padding-left: 20%;
-}
-
-.imprint {
-    width: 60%;
-}
-
-@media(max-width:1075px) {
     .container-imprint {
-        padding-left: 25px;
-    }
-    .imprint {
-        width: 85%;
-        padding-right: 0;
-        padding-top: 100px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 18%;
+        background-color: black;
+        height: 100vh;
+        color: white;
         h1 {
-            font-size: 32px;
+            color: #E6405D;
+        }
+        a {
+            text-decoration: none;
+            transition: all 225ms ease-in-out;
+            color: #7AF8D9;
+            &:hover {
+                color: #11f2ba;
+                text-decoration: underline;
+            }
         }
     }
-}
+    
+    .imprint {
+        width: 60%;
+    }
+    
+    @media(max-width:1650px) {
+        .container-imprint {
+            padding-left: 13%;
+        }
+    }
+    
+    @media(max-width:1550px) {
+        .container-imprint {
+            padding-left: 11%;
+        }
+    }
+    
+    @media(max-width:1350px) {
+        .container-imprint {
+            padding-left: 4%;
+        }
+    }
+    
+    @media(max-width:1075px) {
+        .container-imprint {
+            padding-left: 25px;
+        }
+        .imprint {
+            width: 85%;
+            padding-right: 0;
+            padding-top: 100px;
+            h1 {
+                font-size: 32px;
+            }
+        }
+    }

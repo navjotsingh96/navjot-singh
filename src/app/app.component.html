@@ -1,7 +1,7 @@
-<div [class.bgr-clr]="router.url == '/'">
+<div class="bgr-clr">
     <app-header id="top"></app-header>
 </div>
 <router-outlet></router-outlet>
-<div [class.dark]="router.url !== '/'">
+<div>
     <app-footer></app-footer>
 </div>

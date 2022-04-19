@@ -1,16 +1,44 @@
 .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 18%;
+    padding-right: 17%;
+    background-color: black;
+    color: white;
+    a {
+        text-decoration: none;
+        transition: all 225ms ease-in-out;
+        color: #7AF8D9;
+        &:hover {
+            color: #11f2ba;
+            text-decoration: underline;
+        }
+    }
 }
 
 .data-container {
     h1,
     h2 {
-        color: black;
+        color: #E6405D;
+    }
+}
+
+@media(max-width:1650px) {
+    .container {
+        padding-left: 13%;
+    }
+}
+
+@media(max-width:1550px) {
+    .container {
+        padding-left: 11%;
+    }
+}
+
+@media(max-width:1350px) {
+    .container {
+        padding-left: 4%;
     }
 }
 
