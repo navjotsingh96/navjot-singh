@@ -22,7 +22,8 @@ export class MyWorkComponent implements OnInit {
   game = false;
   join = false;
   ringoffire = false;
- 
+  website = false
+
   allProlects() {
     this.all = true;
     this.java = true;
@@ -66,5 +67,12 @@ export class MyWorkComponent implements OnInit {
   ringNone() {
     this.ringoffire = false;
 
+  }
+  mywebsite() {
+    this.website = true;
+
+  }
+  mywebsiteNone() {
+    this.website = false;
   }
 }

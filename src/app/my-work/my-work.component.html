@@ -51,5 +51,13 @@
                 <a href="#" target="_blank">Coming Soon</a>
             </div>
         </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000" *ngIf="angular" class="project-images" (mouseenter)="mywebsite()" (mouseleave)="mywebsiteNone()">
+            <img src="assets/img/my-website.png">
+            <div *ngIf="website" class="project-details">
+                <div><span>Portfolio</span></div>
+                <p>Angular-based Webpage.</p>
+                <a href="#top">Go to Top</a>
+            </div>
+        </div>
     </div>
 </div>
