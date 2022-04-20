@@ -28,9 +28,29 @@ footer {
 }
 
 .darkmode {
-    padding-left: 20%;
+    padding-left: 18%;
     padding-right: 20%;
     justify-content: space-between;
+}
+
+@media(max-width:1650px) {
+    .darkmode {
+        padding-left: 13%;
+    }
+}
+
+@media(max-width:1550px) {
+    .darkmode {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+}
+
+@media(max-width:1350px) {
+    .darkmode {
+        padding-left: 4%;
+        padding-right: 10%;
+    }
 }
 
 @media (max-width:1075px) {
