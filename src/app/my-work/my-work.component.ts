@@ -2,6 +2,7 @@ import { style } from '@angular/animations';
 import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-my-work',
   templateUrl: './my-work.component.html',

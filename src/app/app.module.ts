@@ -12,6 +12,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectComponent } from './data-protect/data-protect.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,15 @@ import { DataProtectComponent } from './data-protect/data-protect.component';
     AboutMeComponent,
     ContactMeComponent,
     ImprintComponent,
+
     DataProtectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatButtonModule,
+    AppRoutingModule,
+    MatInputModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
