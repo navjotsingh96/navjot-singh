@@ -163,10 +163,10 @@ h1 {
 }
 
 .main-image {
-    height: 500px;
-    width: 500px;
-    max-width: 550px;
-    max-height: 550px;
+    height: 400px;
+    width: 400px;
+    max-width: 450px;
+    max-height: 450px;
     object-fit: cover;
     object-position: 0% 10%;
     border-radius: 100%;
@@ -190,6 +190,22 @@ h1 {
     &:hover {
         transform: translateY(-10px) translateX(-10px);
         box-shadow: 9px 9px 4px 0px;
+    }
+}
+
+.animi {
+    animation: myAnim 900ms ease 0s infinite alternate-reverse both;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes myAnim {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100px);
     }
 }
 

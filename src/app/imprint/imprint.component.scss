@@ -1,57 +1,53 @@
+.imprint {
+    background-color: black;
+    padding-left: 18%;
+    padding-right: 18%;
+    height: 100vh;
+    overflow-y: scroll;
+    color: white;
+    text-align: center;
+    h1 {
+        color: #E6405D;
+    }
+    a {
+        text-decoration: none;
+        transition: all 225ms ease-in-out;
+        color: #7AF8D9;
+        &:hover {
+            color: #11f2ba;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media(max-width:1650px) {
     .container-imprint {
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 18%;
-        background-color: black;
-        height: 100vh;
-        color: white;
-        h1 {
-            color: #E6405D;
-        }
-        a {
-            text-decoration: none;
-            transition: all 225ms ease-in-out;
-            color: #7AF8D9;
-            &:hover {
-                color: #11f2ba;
-                text-decoration: underline;
-            }
-        }
+        padding-left: 13%;
     }
-    
+}
+
+@media(max-width:1550px) {
+    .container-imprint {
+        padding-left: 11%;
+    }
+}
+
+@media(max-width:1350px) {
     .imprint {
-        width: 60%;
+        padding-left: 4%;
     }
-    
-    @media(max-width:1650px) {
-        .container-imprint {
-            padding-left: 13%;
+}
+
+@media(max-width:1075px) {
+    .imprint {
+        padding-left: 25px;
+    }
+    .imprint {
+        padding-right: 25px;
+        padding-top: 100px;
+        padding-bottom: 25px;
+        h1 {
+            font-size: 32px;
         }
     }
-    
-    @media(max-width:1550px) {
-        .container-imprint {
-            padding-left: 11%;
-        }
-    }
-    
-    @media(max-width:1350px) {
-        .container-imprint {
-            padding-left: 4%;
-        }
-    }
-    
-    @media(max-width:1075px) {
-        .container-imprint {
-            padding-left: 25px;
-        }
-        .imprint {
-            width: 85%;
-            padding-right: 0;
-            padding-top: 100px;
-            h1 {
-                font-size: 32px;
-            }
-        }
-    }
+}

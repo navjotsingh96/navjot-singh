@@ -18,6 +18,8 @@
 }
 
 .data-container {
+    text-align: center;
+    overflow-y: scroll;
     h1,
     h2 {
         color: #E6405D;
@@ -46,6 +48,7 @@
     .container {
         padding-left: 25px;
         padding-right: 25px;
+        padding-bottom: 25px;
     }
     .data-container {
         padding-right: 0;
