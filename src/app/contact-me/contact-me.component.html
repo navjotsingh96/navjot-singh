@@ -3,25 +3,29 @@
         <h1 data-aos="fade-left" data-aos-duration="1000"> Contact me.</h1>
         <p data-aos="fade-right" data-aos-duration="1000">Get in touch via the from below, or emailing <a href=" mailto:hello@navjot-singh.de">hello@navjot-singh.de </a></p>
         <div class="contact-form">
-            <form action="https://navjot-singh.de/send_mail/send_mail.php" method="post">
+            <form (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm" method="post">
                 <div data-aos="fade-left" data-aos-duration="1000" class="inputarea">
+
                     <div>
                         <label for="name ">Name</label>
                     </div>
                     <div>
-                        <input type="text" name="name" required placeholder="Enter your Name">
-
+                        <input type="text" name="name" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
+                    </div>
+                    <div style="color: rgb(185, 1, 1);" *ngIf="nameInput.invalid && nameInput.touched">
+                        Your Name is required
                     </div>
                 </div>
-
-
 
                 <div data-aos="fade-left" data-aos-duration="1000" class="inputarea">
                     <div>
                         <label for="email">Email Adress</label>
                     </div>
                     <div>
-                        <input required type="email" name="email" placeholder="Enter your Email adress">
+                        <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="Enter your Email adress" [(ngModel)]="contact.email" #emailInput="ngModel">
+                    </div>
+                    <div style="color: rgb(208, 6, 6);" *ngIf="emailInput.invalid && emailInput.touched">
+                        Your valid Email is required
                     </div>
                 </div>
 
@@ -31,14 +35,18 @@
                         <label for="message">Message</label>
                     </div>
                     <div>
-                        <textarea required name="message" placeholder="Write your message"></textarea>
+                        <textarea required name="message" placeholder="Write your message" [(ngModel)]="contact.message" #messageInput="ngModel"></textarea>
 
+                    </div>
+                    <div style="color: rgb(208, 6, 6);" *ngIf="messageInput.invalid && messageInput.touched">
+                        Please write something
                     </div>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" class="btn">
-                    <button type="submit">Send</button>
+                    <button class="btn-class" [disabled]="contactForm.invalid" [class.disabled]="contactForm.invalid" [class.active]="contactForm.valid" type="submit">Send</button>
                 </div>
             </form>
+
         </div>
     </div>
 </div>

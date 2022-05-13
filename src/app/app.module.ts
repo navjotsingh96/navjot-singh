@@ -15,6 +15,9 @@ import { DataProtectComponent } from './data-protect/data-protect.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,10 @@ import { MatInputModule } from '@angular/material/input';
   ],
   imports: [
     BrowserModule,
-    MatButtonModule,
     AppRoutingModule,
-    MatInputModule,
-    NoopAnimationsModule
+    FormsModule,
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
