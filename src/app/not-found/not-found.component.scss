@@ -1,0 +1,74 @@
+.main-container {
+    height: 90vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.err {
+    color: #ffffff;
+    font-size: 11rem;
+}
+
+.far {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 6px solid #de3f5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fix {
+    font-size: 7rem;
+}
+
+.rotate-center {
+    animation: rotate-center 3s ease-in-out infinite both
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.err2 {
+    color: #ffffff;
+    font-size: 11rem;
+}
+
+.msg {
+    text-align: center;
+    font-size: 1.6rem;
+    width: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: #de3f5a;
+}
+
+a:hover {
+    text-decoration: underline;
+}

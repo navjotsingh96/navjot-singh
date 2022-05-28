@@ -12,12 +12,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectComponent } from './data-protect/data-protect.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +32,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ContactMeComponent,
     ImprintComponent,
 
-    DataProtectComponent
+    DataProtectComponent,
+     NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
     FormsModule,
     HttpClientModule,
     MatSnackBarModule

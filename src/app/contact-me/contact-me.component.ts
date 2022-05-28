@@ -52,6 +52,9 @@ export class ContactMeComponent implements OnInit {
   }
   sentSnackBar() {
     this._snackBar.open('Email sent', 'Close');
+    setTimeout(() => {
+      this._snackBar.dismiss();
+    }, 5000);
   }
   errorSnackBar() {
     this._snackBar.open('Email could not be sent. Please contact me direct on hello@navjot-singh.de', 'Close');
