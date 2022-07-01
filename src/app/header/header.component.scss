@@ -1,9 +1,16 @@
     header {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 20px;
-        padding-right: 65px;
+        /*  padding-right: 65px; */
+        img {
+            width: 160px;
+            cursor: pointer;
+        }
+    }
+    
+    .links {
         a {
             color: white;
             margin-left: 50px;
@@ -14,14 +21,6 @@
                 color: #E6405D;
             }
         }
-        img {
-            width: 160px;
-            cursor: pointer;
-        }
-    }
-    
-    .margin-right {
-        margin-right: 565px;
     }
     
     .darkHeader {
@@ -217,8 +216,7 @@
         margin-left: 50px;
     }
     /*header responsive*/
-    
-    @media(max-width:1350px) {
+    /*    @media(max-width:1350px) {
         header {
             justify-content: space-between;
             padding-right: 100px;
@@ -226,9 +224,8 @@
         .margin-right {
             margin-right: 0px;
         }
-    }
-    
-    @media(max-width:1170px) {
+    } */
+    /*     @media(max-width:1170px) {
         header {
             padding-right: 50px;
             padding-left: 16px;
@@ -236,30 +233,12 @@
                 margin-left: -50px;
             }
         }
-    }
+    } */
     /**Animation to impressum on hover till here*/
     
     @media (max-width: 775px) {
         .width {
             width: 90vw;
-        }
-    }
-    
-    @media(max-width: 1250px) {
-        .darkHeader {
-            padding-left: 11%;
-        }
-    }
-    
-    @media(max-width: 1170px) {
-        header {
-            padding-left: 10%;
-        }
-    }
-    
-    @media(max-width:920px) {
-        header {
-            padding-left: 5%;
         }
     }
     
@@ -276,13 +255,14 @@
         .hide-img img {
             width: 90px;
             padding-top: 20px;
-            padding-left: 20px;
+            padding-left: 25px;
         }
         .hide-img a {
             display: flex !important;
         }
         .header {
             width: 100%;
+            display: unset;
         }
         #sidebarMenu {
             transform: translateX(250%);

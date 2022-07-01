@@ -4,11 +4,12 @@ footer {
     width: 100vw;
     background-color: white;
     a {
-        text-decoration: none;
-        color: gray;
+        text-decoration: 3px transparent;
+        color: rgb(78, 78, 78);
         transition: all 225ms ease-in-out;
         &:hover {
             color: black;
+            transition: all 225ms ease-in-out;
             text-decoration: 3px underline;
         }
     }
@@ -17,44 +18,21 @@ footer {
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     img {
         margin-left: 50px;
         height: 50px;
         transition: all 225ms ease-in-out;
+        border-radius: 100%;
+        padding: 5px;
         &:hover {
             transform: translateY(-10px) scale(1.1);
+            box-shadow: 0px 13px 11px 0px #000000b5;
         }
     }
 }
 
-.darkmode {
-    padding-left: 18%;
-    padding-right: 20%;
-    justify-content: space-between;
-}
-
-@media(max-width:1650px) {
-    .darkmode {
-        padding-left: 13%;
-    }
-}
-
-@media(max-width:1550px) {
-    .darkmode {
-        padding-left: 11%;
-        padding-right: 11%;
-    }
-}
-
-@media(max-width:1350px) {
-    .darkmode {
-        padding-left: 4%;
-        padding-right: 10%;
-    }
-}
-
-@media (max-width:1075px) {
+@media (max-width:875px) {
     footer {
         display: flex;
         align-items: center;

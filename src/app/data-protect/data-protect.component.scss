@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    padding-left: 18%;
-    padding-right: 17%;
     background-color: black;
     color: white;
     a {
@@ -18,7 +16,6 @@
 }
 
 .data-container {
-    text-align: center;
     overflow-y: scroll;
     h1,
     h2 {
@@ -26,25 +23,7 @@
     }
 }
 
-@media(max-width:1650px) {
-    .container {
-        padding-left: 13%;
-    }
-}
-
-@media(max-width:1550px) {
-    .container {
-        padding-left: 11%;
-    }
-}
-
-@media(max-width:1350px) {
-    .container {
-        padding-left: 4%;
-    }
-}
-
-@media(max-width:1075px) {
+@media(max-width:875px) {
     .container {
         padding-left: 25px;
         padding-right: 25px;

@@ -33,8 +33,13 @@
     .skill-icons {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: auto;
         flex-direction: column;
+    }
+    
+    .icon {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .icon-img {
@@ -59,24 +64,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
     }
     
-    @media (max-width:1300px) {
+    @media (max-width:875px) {
         .div-3 {
-            width: 60%;
-        }
-    }
-    
-    @media (max-width:1150px) {
-        .div-3 {
-            width: 80%;
-        }
-    }
-    
-    @media (max-width:850px) {
-        .div-3 {
-            width: 90%;
+            justify-content: center;
         }
     }
     
