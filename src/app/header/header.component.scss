@@ -251,7 +251,19 @@
         }
     }
     
-    @media (max-width: 1075px) {
+    @media(max-width: 1170px) {
+        header {
+            padding-left: 10%;
+        }
+    }
+    
+    @media(max-width:920px) {
+        header {
+            padding-left: 5%;
+        }
+    }
+    
+    @media (max-width: 875px) {
         header {
             display: none;
         }
