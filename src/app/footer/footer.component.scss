@@ -15,12 +15,15 @@ footer {
     }
 }
 
+.img-left {
+    margin-left: 50px;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     img {
-        margin-left: 50px;
         height: 50px;
         transition: all 225ms ease-in-out;
         border-radius: 100%;
@@ -38,14 +41,14 @@ footer {
         align-items: center;
         justify-content: center;
         padding-top: 0;
+        height: 115px;
     }
     .footer-container {
         flex-direction: column-reverse;
-        padding-right: 40px;
     }
     .links {
-        padding-left: 30px;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
     .darkmode {
         padding-left: 0;
