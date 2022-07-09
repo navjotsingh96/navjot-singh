@@ -37,6 +37,28 @@ p {
     margin-right: 12% !important;
 }
 
+.link-animation {
+    display: inline-block;
+    color: #7AF8D9;
+    text-decoration: none;
+    transition: all 225ms ease-in-out;
+}
+
+.link-animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #11f2ba;
+    color: #11f2ba;
+    transition: width .3s;
+}
+
+.link-animation:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
 @media(max-width:1366px) {
     .m-left {
         margin-left: 10%;

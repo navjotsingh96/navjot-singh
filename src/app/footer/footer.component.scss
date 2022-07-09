@@ -3,7 +3,7 @@ footer {
     padding-top: 50px;
     width: 100vw;
     background-color: white;
-    a {
+    /*     a {
         text-decoration: 3px transparent;
         color: rgb(78, 78, 78);
         transition: all 225ms ease-in-out;
@@ -12,6 +12,26 @@ footer {
             transition: all 225ms ease-in-out;
             text-decoration: 3px underline;
         }
+    } */
+}
+
+.footer-links {
+    text-decoration: none;
+    transition: all 225ms ease-in-out;
+    color: rgb(78, 78, 78);
+    display: inline-block;
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: black;
+        color: black;
+        transition: width .3s;
+    }
+    &:hover::after {
+        width: 100%;
+        color: black;
     }
 }
 

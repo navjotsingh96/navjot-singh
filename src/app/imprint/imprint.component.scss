@@ -6,15 +6,6 @@
     h1 {
         color: #E6405D;
     }
-    a {
-        text-decoration: none;
-        transition: all 225ms ease-in-out;
-        color: #7AF8D9;
-        &:hover {
-            color: #11f2ba;
-            text-decoration: underline;
-        }
-    }
 }
 
 @media(max-width:875px) {

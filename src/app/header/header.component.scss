@@ -1,287 +1,249 @@
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 20px;
-        /*  padding-right: 65px; */
-        img {
-            width: 160px;
-            cursor: pointer;
-        }
-    }
-    
-    .links {
-        a {
-            color: white;
-            margin-left: 50px;
-            text-decoration: none;
-            border-bottom: 3px solid transparent;
-            transition: all 225ms ease;
-            &:hover {
-                color: #E6405D;
-            }
-        }
-    }
-    
-    .darkHeader {
-        background-color: black;
-        box-shadow: 0px 0px 5px 0px #c4c4c4;
-        justify-content: space-between;
-        padding-left: 15%;
-        padding-right: 20%;
-        .margin-right {
-            margin-right: 0px
-        }
-    }
-    
-    .darkLinks {
-        a {
-            color: black;
-        }
-    }
-    
-    @import url('https://fonts.googleapis.com/css?family=Varela+Round');
-    .d-none {
-        display: none !important;
-    }
-    
-    .header {
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 0 auto;
-        box-shadow: none;
-        background-color: #1a1a1a;
-        position: fixed;
-        height: 80px!important;
-        overflow: hidden;
-        z-index: 10;
-    }
-    
-    .header-img {
-        display: none;
-        width: 40px;
-    }
-    
-    #sidebarMenu {
-        display: none;
-        justify-content: center;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        width: 250px;
-        margin-top: 60px;
-        top: -60px;
-        transition: transform 250ms ease-in-out;
-        backdrop-filter: blur(5px);
-        z-index: 9;
-        background-color: #00000045;
-    }
-    
-    .sidebarMenuInner {
-        margin: 0;
-        padding: 0;
-        margin-top: 100px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .sidebarMenuInner li {
-        list-style: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    /*  padding-right: 65px; */
+    img {
+        width: 160px;
         cursor: pointer;
-        padding: 100px 0px 0px 0px;
     }
-    
-    .sidebarMenuInner li span {
-        display: block;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.50);
-    }
-    
-    .sidebarMenuInner li a {
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        cursor: pointer;
+}
+
+.links {
+    a {
+        color: white;
+        margin-left: 50px;
         text-decoration: none;
-        padding: 20px;
+        border-bottom: 3px solid transparent;
+        transition: all 225ms ease;
+        &:hover {
+            color: #E6405D;
+        }
     }
-    
-    input[type="checkbox"]:checked~#sidebarMenu {
-        transform: translateX(150%);
+}
+
+.darkHeader {
+    background-color: black;
+    box-shadow: 0px 0px 5px 0px #c4c4c4;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 20%;
+    .margin-right {
+        margin-right: 0px
     }
-    
-    input[type=checkbox] {
-        transition: all 0.3s;
-        box-sizing: border-box;
+}
+
+.darkLinks {
+    a {
+        color: black;
+    }
+}
+
+.d-none {
+    display: none !important;
+}
+
+.header {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    box-shadow: none;
+    background-color: #1a1a1a;
+    position: fixed;
+    height: 80px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.header-img {
+    display: none;
+    width: 40px;
+}
+
+#sidebarMenu {
+    display: none;
+    justify-content: center;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    top: -60px;
+    transition: transform 250ms ease-in-out;
+    backdrop-filter: blur(5px);
+    z-index: 9;
+    background-color: #00000045;
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 100px 0px 0px 0px;
+}
+
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(150%);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    right: 20px;
+    height: 22px;
+    width: 22px;
+    display: none;
+    position: fixed;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+    width: 50%;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.responsive-mobile {
+    display: block;
+    padding-left: 20px;
+}
+
+
+/*header responsive*/
+
+@media (max-width: 775px) {
+    .width {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 875px) {
+    header {
         display: none;
     }
-    
     .sidebarIconToggle {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        cursor: pointer;
-        position: absolute;
-        z-index: 99;
-        height: 100%;
-        width: 100%;
-        top: 30px;
-        right: 20px;
-        height: 22px;
-        width: 22px;
-        display: none;
-        position: fixed;
-    }
-    
-    .spinner {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        background-color: #fff;
-    }
-    
-    .horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: right;
-        margin-top: 3px;
-        width: 50%;
-    }
-    
-    .diagonal.part-1 {
-        position: relative;
-        transition: all 0.3s;
-        box-sizing: border-box;
-        float: left;
-    }
-    
-    .diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin-top: 3px;
-    }
-    
-    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        opacity: 0;
-    }
-    
-    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(135deg);
-        margin-top: 8px;
-    }
-    
-    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(-135deg);
-        margin-top: -9px;
-    }
-    
-    .responsive-mobile {
         display: block;
-        padding-left: 20px;
     }
-    /**Animation to impressum on hover*/
-    
-    .impressum {
-        color: blue !important;
+    .hide-img {
+        display: flex;
     }
-    
-    .impressum::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        background: black;
-        transition: width 225ms;
-        margin-left: 50px;
+    .hide-img img {
+        width: 90px;
+        padding-top: 20px;
+        padding-left: 25px;
     }
-    
-    .impressum:hover::after {
-        width: 370px;
-        margin-left: 50px;
+    .hide-img a {
+        display: flex !important;
     }
-    /*header responsive*/
-    /*    @media(max-width:1350px) {
-        header {
-            justify-content: space-between;
-            padding-right: 100px;
-        }
-        .margin-right {
-            margin-right: 0px;
-        }
-    } */
-    /*     @media(max-width:1170px) {
-        header {
-            padding-right: 50px;
-            padding-left: 16px;
-            img {
-                margin-left: -50px;
-            }
-        }
-    } */
-    /**Animation to impressum on hover till here*/
-    
-    @media (max-width: 775px) {
-        .width {
-            width: 90vw;
-        }
+    .header {
+        width: 100%;
+        display: unset;
     }
-    
-    @media (max-width: 875px) {
-        header {
-            display: none;
+    #sidebarMenu {
+        transform: translateX(250%);
+        width: 40% !important;
+        display: flex;
+    }
+    .header-img {
+        display: flex;
+    }
+    .darkLinks {
+        color: black !important;
+        &:hover {
+            color: rgb(52, 50, 50) !important;
         }
-        .sidebarIconToggle {
-            display: block;
-        }
-        .hide-img {
-            display: flex;
-        }
-        .hide-img img {
-            width: 90px;
-            padding-top: 20px;
-            padding-left: 25px;
-        }
-        .hide-img a {
-            display: flex !important;
-        }
-        .header {
-            width: 100%;
-            display: unset;
-        }
-        #sidebarMenu {
-            transform: translateX(250%);
-            width: 40% !important;
-            display: flex;
-        }
-        .header-img {
-            display: flex;
-        }
-        .darkLinks {
+        a {
             color: black !important;
             &:hover {
-                color: rgb(52, 50, 50) !important;
-            }
-            a {
-                color: black !important;
-                &:hover {
-                    color: rgb(157, 157, 157) !important;
-                }
+                color: rgb(157, 157, 157) !important;
             }
         }
     }
+}

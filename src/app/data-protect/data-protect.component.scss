@@ -4,15 +4,6 @@
     padding-top: 20px;
     background-color: black;
     color: white;
-    a {
-        text-decoration: none;
-        transition: all 225ms ease-in-out;
-        color: #7AF8D9;
-        &:hover {
-            color: #11f2ba;
-            text-decoration: underline;
-        }
-    }
 }
 
 .data-container {
