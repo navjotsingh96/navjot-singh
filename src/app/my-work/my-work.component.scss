@@ -21,16 +21,16 @@
         height: 80px;
         margin-left: 10px;
         background-color: black;
-        border: 2px solid #E6405D;
+        border: 2px solid #e6405d;
         color: white;
         font-size: 17px;
         transition: all 225ms ease-in-out;
         cursor: pointer;
         &:hover {
-            background-color: #E6405D;
+            background-color: #e6405d;
         }
         &:focus {
-            background-color: #E6405D;
+            background-color: #e6405d;
         }
     }
 }
@@ -48,7 +48,7 @@
     flex-wrap: wrap;
     width: 70%;
     span {
-        color: #E6405D;
+        color: #e6405d;
         font-weight: 800;
     }
 }
@@ -66,21 +66,21 @@
         object-fit: cover;
     }
     &:hover {
-        box-shadow: 0px 0px 12px 1px #E6405D;
+        box-shadow: 0px 0px 12px 1px #e6405d;
     }
 }
 
 .project-details {
-    color: white;
+    color: black;
     height: 300px;
     width: 380px;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(137, 137, 137, 0.49);
+    background-color: #ffffffcc;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     backdrop-filter: blur(2px);
     flex-direction: column;
     text-align: center;
@@ -89,16 +89,48 @@
     z-index: 1;
     transition: all 225ms ease-in-out;
     opacity: 1;
+    p {
+        margin: 0;
+        width: 101%;
+    }
     a {
-        color: white;
+        color: #e6405d;
+        text-decoration: none;
+        transition: all 255ms ease-in-out;
+        &:hover {
+            color: white;
+            transition: all 255ms ease-in-out;
+            background-color: #e6405d;
+        }
     }
 }
 
-.activated {
-    background-color: #E6405D !important;
+.link-btn {
+    background-color: white;
+    padding: 13px;
+    width: 72px;
+    border: 2px solid #e6405d;
 }
 
-@media (max-width:1075px) {
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.activated {
+    background-color: #e6405d !important;
+}
+
+.f-size-22 {
+    font-size: 22px;
+    h3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1075px) {
     .heading {
         h2 {
             padding-top: 25px;
