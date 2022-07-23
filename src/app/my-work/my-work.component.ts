@@ -24,7 +24,7 @@ export class MyWorkComponent implements OnInit {
   join = false;
   ringoffire = false;
   website = false
-
+  weather = false;
   allProlects() {
     this.all = true;
     this.java = true;
@@ -75,5 +75,12 @@ export class MyWorkComponent implements OnInit {
   }
   mywebsiteNone() {
     this.website = false;
+  }
+  weatherApp() {
+    this.weather = true;
+  }
+
+  weatherAppNone() {
+    this.weather = false;
   }
 }
