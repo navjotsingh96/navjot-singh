@@ -44,43 +44,4 @@ export class MyWorkComponent implements OnInit {
     this.angular = false;
   }
 
-  pokemon() {
-    this.pokedox = true;
-  }
-  pokemonNone() {
-    this.pokedox = false;
-  }
-  elPollo() {
-    this.game = true;
-  }
-  elPolloNone() {
-    this.game = false;
-  }
-  joinapp() {
-    this.join = true;
-  }
-  joinNone() {
-    this.join = false;
-  }
-  ring() {
-    this.ringoffire = true;
-  }
-  ringNone() {
-    this.ringoffire = false;
-
-  }
-  mywebsite() {
-    this.website = true;
-
-  }
-  mywebsiteNone() {
-    this.website = false;
-  }
-  weatherApp() {
-    this.weather = true;
-  }
-
-  weatherAppNone() {
-    this.weather = false;
-  }
 }

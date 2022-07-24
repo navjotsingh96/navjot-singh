@@ -54,7 +54,7 @@
 }
 
 .project-images {
-    transition: all 225ms ease-in-out;
+    transition: all 125ms ease-in-out;
     position: relative;
     cursor: pointer;
     height: 300px;
@@ -67,10 +67,14 @@
     }
     &:hover {
         box-shadow: 0px 0px 12px 1px #e6405d;
+        .project-details {
+            opacity: 1;
+        }
     }
 }
 
 .project-details {
+    opacity: 0;
     color: black;
     height: 300px;
     width: 380px;
@@ -88,7 +92,6 @@
     padding-right: 10px;
     z-index: 1;
     transition: all 225ms ease-in-out;
-    opacity: 1;
     p {
         margin: 0;
         width: 101%;
