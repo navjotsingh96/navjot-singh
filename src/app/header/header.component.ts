@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DOCUMENT } from '@angular/common'; 
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +8,26 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  constructor(public router : Router,
+  constructor(public router: Router,
     @Inject(DOCUMENT) document: Document) { }
 
   ngOnInit(): void {
-}
-openSideBar(){
+  }
+  hide() {
+    console.log('Clciked');
+    let sidemenu = document.getElementById('sidebarMenu');
+    sidemenu?.classList.toggle('open-menu')
 
-  
-  console.log('Clicked');
-  
-}
+  }
+  toogelMenu() {
+    console.log('Clicked');
+    let sidemenu = document.getElementById('sidebarMenu');
+    sidemenu?.classList.toggle('open-menu')
+  }
+  openSideBar() {
+
+
+    console.log('Clicked');
+
+  }
 }

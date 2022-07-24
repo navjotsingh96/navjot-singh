@@ -116,12 +116,18 @@ input[type="checkbox"]:checked~#sidebarMenu {
 }
 
 #sidebarMenu {
-    input[type="checkbox"]:checked~#sidebarMenu {
+    input[type="radio"]:checked~#sidebarMenu {
         transform: translateX(0%);
     }
 }
 
 input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+input[type=radio] {
     transition: all 0.3s;
     box-sizing: border-box;
     display: none;
