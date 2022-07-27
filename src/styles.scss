@@ -28,13 +28,12 @@ p {
 }
 
 .m-left {
-    margin-left: 12% !important;
+    margin-left: 12%;
     margin-right: auto;
 }
 
 .m-right {
-    margin-left: auto;
-    margin-right: 12% !important;
+    margin-right: 12%;
 }
 
 .link-animation {
@@ -79,7 +78,7 @@ p {
 
 @media(max-width:1060px) {
     .m-left {
-        margin-left: 5%;
+        margin-left: 5% !important;
     }
     .m-right {
         margin-right: 5%;
@@ -88,10 +87,10 @@ p {
 
 @media(max-width:950px) {
     .m-left {
-        margin-left: 3%;
+        margin-left: 3% !important;
     }
     .m-right {
-        margin-right: 3%;
+        margin-right: 3% !important;
     }
 }
 
@@ -134,7 +133,7 @@ p {
 
 @media(max-width:1060px) {
     .m-left-skill {
-        margin-left: 5%;
+        margin-left: 5% !important;
     }
     .m-right-skill {
         margin-right: 5%;

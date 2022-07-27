@@ -13,21 +13,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  hide() {
-    console.log('Clciked');
-    let sidemenu = document.getElementById('sidebarMenu');
-    sidemenu?.classList.toggle('open-menu')
-
-  }
-  toogelMenu() {
-    console.log('Clicked');
-    let sidemenu = document.getElementById('sidebarMenu');
-    sidemenu?.classList.toggle('open-menu')
-  }
-  openSideBar() {
-
-
-    console.log('Clicked');
-
-  }
 }
