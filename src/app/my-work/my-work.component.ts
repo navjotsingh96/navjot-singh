@@ -19,6 +19,9 @@ export class MyWorkComponent implements OnInit {
   angular = true;
   java = true;
 
+  jsProjects = false;
+  angProjects = false;
+
   pokedox = false;
   game = false;
   join = false;
@@ -29,10 +32,13 @@ export class MyWorkComponent implements OnInit {
     this.all = true;
     this.java = true;
     this.angular = true;
+    this.jsProjects = false;
+    this.angProjects = false;
 
   }
   angularProjects() {
     this.angular = true;
+    this.angProjects = true;
     this.all = false;
     this.java = false;
 
@@ -40,8 +46,11 @@ export class MyWorkComponent implements OnInit {
 
   javaProjects() {
     this.java = true
+    this.jsProjects = true
     this.all = false;
     this.angular = false;
+    this.angProjects = false;
+
   }
 
 }

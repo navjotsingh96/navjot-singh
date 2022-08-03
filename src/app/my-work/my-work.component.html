@@ -6,11 +6,11 @@
         <button [class.activated]="all" (click)="allProlects()">All</button>
     </div>
     <div>
-        <button (click)="angularProjects()">Angular</button>
+        <button [class.activated]="angProjects" (click)="angularProjects()">Angular</button>
 
     </div>
     <div>
-        <button (click)="javaProjects()">Javascript</button>
+        <button [class.activated]="jsProjects" (click)="javaProjects()">Javascript</button>
     </div>
 </div>
 <div class="project-container">
