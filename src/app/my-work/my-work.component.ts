@@ -41,6 +41,8 @@ export class MyWorkComponent implements OnInit {
     this.angProjects = true;
     this.all = false;
     this.java = false;
+    this.jsProjects = false;
+
 
   }
 
