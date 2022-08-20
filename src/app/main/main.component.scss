@@ -3,7 +3,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 110px);
+}
+
+.c2 .word {
+    display: inline-block;
+    /*  line-height: 1em; */
 }
 
 .bgr-clr {
@@ -24,6 +29,9 @@ h1 {
 
 .greeting {
     color: #E6405D;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     span {
         display: inline-block;
         user-select: none;
@@ -136,7 +144,7 @@ h1 {
         color: #7AF8D9;
         height: 60px;
         &:hover {
-            animation: falling 2s ease-out;
+            /*    animation: falling 2s ease-out; */
             transform-origin: bottom center;
         }
     }
@@ -271,8 +279,9 @@ h1 {
 
 @media(max-width:875px) {
     .main-container {
-        flex-direction: column-reverse;
-        padding-top: 110px;
+        flex-direction: column-reverse !important;
+        padding-top: 110px !important;
+        align-items: center !important;
         justify-content: center;
     }
     .e-color {
@@ -303,6 +312,19 @@ h1 {
     }
     .btn-class {
         justify-content: center;
+    }
+}
+
+@media(max-height:800px) {
+    .main-container {
+        padding-top: 45px;
+        align-items: unset;
+    }
+}
+
+@media(max-height:700px) {
+    .scroll-btn {
+        padding-bottom: 10px !important;
     }
 }
 
