@@ -177,7 +177,71 @@ h1 {
     }
 }
 
+.pulse-container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 225ms ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+        animation-play-state: paused;
+    }
+}
+
+.blob {
+    border-radius: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    position: relative;
+    animation: pulse-black 2s infinite;
+}
+
+.white {
+    background: black;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    animation: pulse-white 2s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes pulse-white {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse-black {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
 .main-image {
+    position: absolute;
     height: 400px;
     width: 400px;
     max-width: 450px;
@@ -261,7 +325,9 @@ h1 {
     h1 {
         font-size: 45px;
     }
-    .main-image {
+    .main-image,
+    .blob,
+    .pulse-container {
         width: 350px;
         height: 350px;
     }
@@ -271,7 +337,9 @@ h1 {
     h1 {
         font-size: 38px;
     }
-    .main-image {
+    .main-image,
+    .blob,
+    .pulse-container {
         width: 300px;
         height: 300px;
     }
@@ -293,7 +361,9 @@ h1 {
         margin-left: 25px;
         margin-right: 25px;
     }
-    .main-image {
+    .main-image,
+    .blob,
+    .pulse-container {
         width: 250px;
         height: 250px;
     }
