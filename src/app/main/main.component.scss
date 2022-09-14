@@ -295,3 +295,9 @@ h1 {
         margin-left: 0;
     }
 }
+
+@media(max-height:580px) {
+    .main-container {
+        height: fit-content !important;
+    }
+}
